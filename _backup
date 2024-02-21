@@ -1,2 +1,0 @@
-rm - 2>/dev/null
-rclone -L --no-check-certificate sync ../${PWD##*/} nextcloud:lavori/repos/${PWD##*/} --exclude ".git/**" --exclude ".terraform/**" --exclude "certs/**"
