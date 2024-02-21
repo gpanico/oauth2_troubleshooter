@@ -2,9 +2,7 @@
 echo "<pre>";
  
 # secrets
-$client_id = "aaaaaaaaaaaaaaaaaaaaaaaaa";
-$client_secret = "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb";
-$redirect_uri = "https://uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu/flower/";
+include("dev.inc");
 $scope="openid";
  
 if (!isset($_GET['state']))
