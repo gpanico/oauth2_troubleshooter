@@ -8,6 +8,7 @@ RUN apt-get update \
 COPY index.php .
 CMD mkdir -p flower/
 COPY flower/index.php flower/index.php
+COPY dev.inc flower/dev.inc
  
 EXPOSE 5555
 CMD ["/usr/bin/php", "-S", "0.0.0.0:5555"]
